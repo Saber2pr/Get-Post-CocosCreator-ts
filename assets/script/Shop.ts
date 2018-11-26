@@ -25,7 +25,7 @@ export default class NewClass extends cc.Component {
 
   buy() {
     if (PlayerData.getInstance().money >= this.productValue) {
-      PlayerData.getInstance().money -= 100
+      PlayerData.getInstance().money -= this.productValue
       this.result()
     }
   }
